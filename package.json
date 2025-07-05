@@ -1,0 +1,27 @@
+{
+  "name": "loading-styling",
+  "version": "1.0.0",
+  "description": "Demo for loading skeleton and offline support",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "webpack serve --config client/webpack.config.cjs --open",
+    "build": "webpack --config client/webpack.config.cjs",
+    "server": "node server/index.js"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2",
+    "workbox-webpack-plugin": "^7.3.0"
+  },
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "koa": "^3.0.0",
+    "koa-router": "^13.1.1",
+    "koa-slow": "^2.1.0",
+    "koa-static": "^5.0.0"
+  }
+}

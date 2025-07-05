@@ -7,7 +7,7 @@ const router = new Router();
 
 app.use(cors());
 
-router.get('/data', (ctx) => {
+router.get('/data', async (ctx) => {
   ctx.body = {
     avatar: 'https://randomuser.me/api/portraits/men/1.jpg',
     name: 'Иван Иванов',

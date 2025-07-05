@@ -1,6 +1,6 @@
 const Koa = require('koa');
 const Router = require('koa-router');
-const cors = require('@koa/cors'); // чтобы клиент мог обращаться к серверу с другого порта
+const cors = require('@koa/cors');
 
 const app = new Koa();
 const router = new Router();
